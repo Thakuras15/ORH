@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ORH&amp;V</string>
+    <string name="ChoiceText">Choose one of the radio buttons below</string>
+    <string name="Self">Sound</string>
+    <string name="OtherGuest">Vibration</string>
+
+</resources>
