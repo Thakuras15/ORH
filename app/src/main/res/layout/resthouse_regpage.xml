@@ -119,6 +119,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="82dp" />
 
+
                 <Button
                     android:id="@+id/D"
                     android:layout_width="wrap_content"
@@ -126,6 +127,7 @@
                     android:layout_alignBottom="@+id/X"
                     android:layout_toEndOf="@+id/in_date"
                     android:layout_toRightOf="@+id/in_date"
+                    android:onClick=" "
                     android:text="From DATE" />
 
                 <EditText
@@ -344,47 +346,47 @@
                     android:hint="Enter Here" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="2">
+            <RadioGroup
+                android:id="@+id/R1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Full Suite"
-                    android:textSize="20dp" />
 
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Single Bed"
-                    android:textSize="20dp" />
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                    <RadioButton
+                        android:id="@+id/r0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
 
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="VIP Rest House"
-                    android:textSize="20dp" />
+                        android:text="Full Suite"
+                        android:textSize="20dp" />
 
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ORH-RDSO"
-                    android:textSize="20dp" />
-            </LinearLayout>
+                    <RadioButton
+                        android:id="@+id/r2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/r0"
+                        android:text="Single Bed"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/r0"
+                        android:text="VIP Rest House"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/r4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/r3"
+                        android:layout_below="@+id/r2"
+                        android:text="ORH-RDSO"
+                        android:textSize="20dp" />
+
+            </RadioGroup>
 
             <LinearLayout
                 android:layout_width="match_parent"
